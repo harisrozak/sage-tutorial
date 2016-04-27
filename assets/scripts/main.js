@@ -38,6 +38,35 @@
       init: function() {
         // JavaScript to be fired on the about us page
       }
+    },
+    // Page template: template-custom
+    'page_template_template_custom_php': {
+      init: function() {
+        // bxSldier
+        $(document).ready(function(){
+          $('.bxslider').bxSlider();
+        });
+
+        // odometer
+        var el = document.querySelector('.od_1');
+        var count = 123;
+
+        od_1 = new Odometer({
+          el: el,
+          value: count,
+          format: '',
+          duration: 2000,
+          theme: 'default'
+        });        
+        
+        function transition() {
+          od_1.update(count++); 
+          
+          setTimeout(transition, 2500);
+        }
+
+        transition();
+      }
     }
   };
 

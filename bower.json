@@ -7,7 +7,12 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "3.3.6"
+    "bootstrap-sass": "3.3.6",
+    "bxslider": "*",
+    "font-awesome": "^4.6.1",
+    "components-font-awesome": "^4.6.1",
+    "bxslider-4": "fafnur-bxslider#^4.2.5",
+    "odometer": "^0.4.7"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -30,6 +35,12 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "odometer": {
+      "main": [
+        "./odometer.js",
+        "./themes/odometer-theme-default.css"
       ]
     }
   }
